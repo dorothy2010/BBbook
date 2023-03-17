@@ -13,15 +13,15 @@ permissions:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     environment:
       name: obj_infor
     steps:
     - uses: actions/checkout@v3
-    - name: Set up Python 3.11.2
+    - name: Set up Python 3.8.10
       uses: actions/setup-python@v3
       with:
-        python-version: "3.11.2"
+        python-version: "3.8.10"
         cache: "pip"
       env:
         AGENT_TOOLSDIRECTORY: /opt/hostedtoolache
